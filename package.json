@@ -1,0 +1,18 @@
+{
+  "name": "angular-protect-route",
+  "author": {
+    "name": "Ivan Hušnjak",
+    "email": "ihusnja4@gmail.com",
+    "url": "https://github.com/ihusnja4"
+  },
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.0",
+    "@angular/core": "^8.2.0",
+    "@angular/router": "^8.2.0",
+    "rxjs": "^6.5.3"
+  },
+  "devDependencies": {
+    "ng-dynamic-component": "^5.0.0"
+  }
+}
