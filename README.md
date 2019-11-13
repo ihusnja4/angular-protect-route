@@ -93,6 +93,7 @@ There are others like Attribute-Based Access Control (ABAC) where we might creat
 Angular Protect Route is agnostic in terms which strategy you want to use, so you can implement any strategy that works best for your project.  
 It also abstracts away the backend like LDAP/Windows login, JWT, OAuth... Resolver is de-facto the backend where you may check if user is authenticated or not, token is valid or use custom service.
 
-## Lazy loaded routes
+## Limitations
 
-At this point we do not support lazy loaded routes.
+- Lazy loaded routes: At this point we do not support lazy loaded routes.
+- For Angular 8, components that should be protected must be defined as `entryComponents` in their respective module.
