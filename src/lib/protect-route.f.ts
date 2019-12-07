@@ -4,7 +4,7 @@ import {Route} from '@angular/router';
 import {AngularProtectRouteComponent} from './angular-protect-route.component';
 
 /**
- * This High Order Function (HOF) prepares function that to be used to create protected route by simplifying the input.
+ * This High Order Function (HOF) prepares function that is to be used to create protected route by simplifying the input.
  *
  * @param mapper Mapper function that converts (simplified) input into strategy protection config
  */
