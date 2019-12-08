@@ -22,7 +22,7 @@ describe('AngularProtectRouteComponent', () => {
     let component: AngularProtectRouteComponent;
     let fixture: ComponentFixture<AngularProtectRouteComponent>;
     let activatedRouteService: any;
-    let strategyResolveService: ProtectionStrategy;
+    let strategyResolveService: jasmine.SpyObj<ProtectionStrategy<FooComponent>>;
 
     beforeEach(async(() => {
         activatedRouteService = {
