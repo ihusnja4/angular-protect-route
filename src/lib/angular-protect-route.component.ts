@@ -1,13 +1,12 @@
 import {Component, OnInit, Type} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import {Observable} from 'rxjs';
 
 import {ProtectionStrategy, StrategyConfig} from '.';
-import {Observable} from 'rxjs';
 
 @Component({
     selector: 'ih-protect-route',
-    template: `<ndc-dynamic [ndcDynamicComponent]="component | async"></ndc-dynamic>`,
-    styles: []
+    template: `<ndc-dynamic [ndcDynamicComponent]="component | async"></ndc-dynamic>`
 })
 export class AngularProtectRouteComponent<T = any> implements OnInit {
     component: Observable<Type<T>>;

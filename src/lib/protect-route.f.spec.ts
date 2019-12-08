@@ -1,7 +1,7 @@
 import {Route} from '@angular/router';
 
-import {protectRoute} from './protect-route.f';
 import {AngularProtectRouteComponent} from './angular-protect-route.component';
+import {protectRoute} from './protect-route.f';
 
 class PseudoComponent {}
 

@@ -1,11 +1,11 @@
+import {Component, Input} from '@angular/core';
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import {By} from '@angular/platform-browser';
 import {ActivatedRoute} from '@angular/router';
 import {of} from 'rxjs';
 
 import {AngularProtectRouteComponent} from './angular-protect-route.component';
 import {ProtectionStrategy} from './protection-strategy';
-import {Component, Input} from '@angular/core';
-import {By} from '@angular/platform-browser';
 
 @Component({
     // tslint:disable-next-line:component-selector
@@ -22,7 +22,7 @@ describe('AngularProtectRouteComponent', () => {
     let component: AngularProtectRouteComponent;
     let fixture: ComponentFixture<AngularProtectRouteComponent>;
     let activatedRouteService: any;
-    let strategyResolveService: ProtectionStrategy;
+    let strategyResolveService: jasmine.SpyObj<ProtectionStrategy<FooComponent>>;
 
     beforeEach(async(() => {
         activatedRouteService = {
